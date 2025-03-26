@@ -1,0 +1,117 @@
+/* Allgemeine Stile */
+body {
+    background: linear-gradient(135deg, #ffcf56, #ff6b6b);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff6b6b, #ff9f1c);
+    z-index: -1;
+}
+
+/* Header */
+header {
+    background: #ff9f1c;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+header.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Content */
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #ff6b6b, #ff9f1c);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.content.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content p {
+    color: white;
+}
+
+/* Zeitstrahl */
+.timeline {
+    max-width: 800px;
+    margin: 40px auto;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 20px;
+    border-left: 3px solid #ff4a4a;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.timeline-dot {
+    width: 15px;
+    height: 15px;
+    background: #ff9f1c;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 5px;
+}
+
+.timeline-content {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #ff6b6b;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+}
+
+/* Animation beim Scrollen */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
