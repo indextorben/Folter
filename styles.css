@@ -97,6 +97,11 @@ header h1 {
     font-size: 1.1rem;
 }
 
+.timeline strong {
+    color: #f1c40f;
+    font-size: 1.1rem;    
+}
+
 /* Zitate */
 .zitat {
     color: #f1c40f;
