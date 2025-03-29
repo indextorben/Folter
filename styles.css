@@ -191,3 +191,12 @@ footer {
     padding: 20px 0;
     width: 100%;
 }
+
+.amnesty-image {
+    width: 100%; /* Volle Breite innerhalb der Card */
+    max-width: 400px; /* Begrenzte Maximalgröße */
+    display: block;
+    margin: 15px auto; /* Zentrierung */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Schatten-Effekt */
+}
