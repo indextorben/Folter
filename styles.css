@@ -183,7 +183,7 @@ header h1 {
 }
 
 footer {
-    background-color: #e74c3c;
+    background-color: linear-gradient(135deg, #2c3e50, #34495e);
     color: white;
     text-align: center;
     bottom: 0;
